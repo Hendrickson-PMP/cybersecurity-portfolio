@@ -1,0 +1,26 @@
+Hardware:  CPU, RAM, Storage
+Firmware: Hardware + Software
+BIOS: Basic Input Output System (Non-Volatile)
+POST: Power On Self Test
+CMOS Chip - Volatile
+BIOS/UEFI - Checks to ensure everything is in working order when the computer boots.
+System Bus- CPU + Memory : Data Bus + Address Bus + Control Bus
+
+STORAGE consist of the type of Technology and Interface
+Technology:  Magnetic (HDD), Solid State (SSD), Hybrid (Magnetic + SSD), Bluetooth, CD, DVD, 
+Interface: PATA "ribbon", SCSI "ribbon", SATA+ACHI, NVME M.2
+
+Hardware Types: Supercomputer, Mainframe, Midrange, Personal Computer
+Software: OS
+OS: 
+1. Microsoft Windows and Servers 
+2. Apple
+3. Linux
+4. Google
+
+Management / Utilities
+Applications: Web Browser
+
+Users - File Explorer
+UAC (User Account Control) - Permission structure for providing access to files
+WIN 32 Profile - Added your profile to the Access Control Table
