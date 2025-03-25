@@ -1,0 +1,15 @@
+Understanding ASCII and Unicode (GCSE)
+
+OSI (Open Systems Interconnect) Model
+
+OSI 7 layers
+Layer 1 - Physical (Bits)
+Layer 2 - Data Link - Frame or Mac (MAC Address)
+Layer 3 - Network - Logical Address - Packets (IPv4 and IPv6)
+Layer 4 - Transport (Reliability) -TCP & UDD
+Layer 5 - Session - Start, Maintain, Stop
+Layer 6 - Presentation - Data Format Translation = ASCI/Unicode, Encryption, Compression
+Layer 7 - Application - Network Ports
+
+All           People         Seem      To          Need      Dominos     Pizza  
+Application   Presentation   Session   Transport   Network   Data Link   Physical
