@@ -1,0 +1,21 @@
+IP Addresses Class
+Class A -- 1 - 126
+Class B -- 128 - 191
+Class C -- 192 - 223
+Class D -- 224 - 239
+Class E -- 240 - 258
+
+NAT - Network Address Translation
+
+Private Setting within Classes
+
+Class A -- 10.0.0.1 - 10.255.255.254
+Class B -- 172.16.X.X - 172.31.X.X
+Class C -- 192.168.x.x - 192.168.0.1
+
+Configure Network Interfaces
+-Manually/Static
+-Dynamically
+
+DHCP -67,68 - Provides IP Addresses
+DNS - 53 - Translate names to IP Addresses
