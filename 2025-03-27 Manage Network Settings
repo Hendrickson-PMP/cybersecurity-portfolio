@@ -1,0 +1,62 @@
+Default Gateway - lets a device from one network communicate with another network.  Also, equivalent to a Router.
+
+Ping utility:  test for issues/trouble shoots - Network Connectivity and name resolution
+
+ARP  - Address Resolution Protocol
+
+SOHO - Small Office Home Office
+
+Client - need a service
+Server - provide a service
+
+DHCP Server - Spit out IP addresses and IP info (IPv.4, Subnet, Default Gateway).  Also, DNS Server.
+
+DNS or Name Server or Resolver or Domain Name Server
+-Maps Domain Name to IP Address (IPv.4)
+
+Traceroute Client
+-Hops = Routers
+
+Traceroute                vs.    Ping
+Multiple routers (Hops)          1 router
+
+ARP - Resolves IP Address to MAC address
+    - makes a network more efficient
+
+    tcpdump (CLI)
+    -packets are at network layer
+    -collect packets and frames
+
+Wireshark (GUI)
+
+Trouble Shooting Model
+- trouble shooting process for both deduction and induction
+
+YAML - database - human readable data serialization
+
+System and Service Administration Process
+
+Service Account - in Windows search "service"
+
+Process - running program; often used synonymously with daemon or service
+
+Daemon - noninteractive program (special process) that runs when system starts
+
+most commands ends with "d"
+- e.g. file transfer service  ---> vsftpd or web service ---> httpd
+
+
+Linux Boot Process (Summarized)
+-processor checks for BIOS/UEFI firmware  + executes
+-BIOS/UEFI - checks and locate bootable media
+
+System Initialization 
+-process that begins when kernel is loaded into memory
+-carried out by unit daemom
+-"parent of all processes"
+-main methods:
+  *systemd
+  *sysVinit
+
+System Utilities
+-Systemctl
