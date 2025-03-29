@@ -1,0 +1,104 @@
+Firewall - authenticate users without password
+  -create a safety barrier between a private network and public network
+  -a filter
+
+Firewall Control List 
+ -IP Address
+ -Protocol - TCP AND UDP
+ -Destination
+ -Port
+ -Permission
+
+Host Based Firewall
+ -Norton
+ -Microsoft Defender
+ -McAffee
+
+ Network based firewall
+
+ Servers = Service
+
+Email Service
+Database Service
+File Service
+Web Service
+Authentication Service
+Firewall Service
+
+ACL - Access Control List
+
+Firewall Types
+ -Stand alone firewall
+ -Routers have a built-in firewall
+
+ SOHO Service
+  -Routing
+  -Firewall
+  -DHCP
+  -DNS
+  -NAT
+
+Network Firewall
+Host Firewall
+
+Network Packets:
+-Source Destination Information
+
+Firewall:
+Hardware
+Software
+
+Proxy Firewall = Application Level Gateway
+
+Firewall do 2 things:
+1. IP Routing
+2. Packet Filter
+
+3 types of Linux Firewall
+1. Netfilter - primary core for Linux
+2. IPTables - "cmd" based interface
+3. Uncomplicated Firewall (UFW)
+    -IPTables
+    -Netfilter
+    -GUI
+4. Firewalld
+    -frontend controller IPTables
+    -CLI
+
+Zones:
+1. Internal - Intranet
+2. Internet - Public
+3. DMZ - Extranet
+
+SSH - Secure Shell
+ -2 keys - public and private
+ -keys stored separately
+
+ Apaches2
+ SSH -Ubuntu
+ SSHD - Centos
+
+ Server - gets the public key
+ Client - gets the private key
+
+ Net Cat
+ -used to test connectivity and send dataacross network
+
+ Port Scanning
+ Most Common uses for net cat
+
+ Port Scanning
+ -Most common uses for netcat
+
+ Port Listening
+   -client computer runs in connect mode
+
+   Pen test - offense
+   Vulnerability Scan - defense
+
+   nmap
+   -Open ports can provide info about which OS a computer uses 
+
+   netcat - open ports
+   nmap -more info
+   
