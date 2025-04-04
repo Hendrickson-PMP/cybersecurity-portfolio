@@ -1,0 +1,191 @@
+Layer 1 Protocols
+1. Wired
+   -Twisted Pair
+   -Coaxial
+   -Fiber Optics
+2. Wireless 
+   -Antennae
+
+1. Types of Twisted Pair
+UTP (Unshielded Twisted Pair):
+
+Most commonly used in LANs.
+
+No additional shielding; relies on twisting to reduce interference.
+
+Examples: Cat5e, Cat6, Cat6a, Cat7.
+
+STP (Shielded Twisted Pair):
+
+Includes additional shielding to protect from electromagnetic interference (EMI).
+
+Used in environments with lots of potential interference (e.g., factories).
+
+Requires grounding.
+
+2. Cable Categories & Specs
+Cat5e: Up to 1 Gbps, 100 MHz.
+
+Cat6: Up to 1 Gbps (10 Gbps for short runs), 250 MHz.
+
+Cat6a: Up to 10 Gbps, 500 MHz.
+
+Cat7/Cat8: Higher speeds and shielding for data centers.
+
+3. Connector Types
+RJ-45: Most common for Ethernet connections.
+
+RJ-11: Older phone lines.
+
+4. Cable Standards
+TIA/EIA-568A and 568B wiring standards (color codes for Ethernet).
+
+Importance of matching standards on both ends of the cable.
+
+Straight-through vs. Crossover cables.
+
+5. Signal & Interference Concepts
+EMI (Electromagnetic Interference)
+
+Crosstalk
+
+NEXT (Near-End Crosstalk)
+
+FEXT (Far-End Crosstalk)
+
+6. Distance Limitations
+Standard max for twisted pair: 100 meters (328 feet).
+
+Signal degradation over distance—why proper planning matters.
+
+7. Tools and Testing
+Cable testers and tone generators.
+
+Verifying pinouts and continuity.
+
+
+Coaxial Cable
+It's not as common for modern LANs, but still widely used in specific applications like broadband internet, CCTV, and older networking setups.
+
+Coaxial cable consists of several layers:
+
+Inner Conductor – Carries the signal (usually copper).
+
+Dielectric Insulator – Separates the inner conductor from shielding.
+
+Shielding (braid or foil) – Protects against EMI.
+
+Outer Jacket – Protective casing.
+
+🔧 Types of Coaxial Cable
+Cable Type	Impedance	Common Use Case
+RG-6	75 ohms	Cable TV, broadband internet (modern standard)
+RG-59	75 ohms	Older CCTV systems, short video connections
+RG-58	50 ohms	Older Ethernet (10BASE2 "Thinnet")
+🔌 Connectors
+BNC (Bayonet Neill–Concelman): Used in CCTV, test equipment, legacy networks.
+
+F-Type: Used in cable TV and broadband internet setups (screw-on).
+
+📘 Topics You’ll Cover in Network+
+✅ Use Cases
+Connecting cable modems to ISP networks.
+
+CCTV and surveillance systems.
+
+Legacy Ethernet (e.g., 10BASE2).
+
+✅ Signal Characteristics
+More resistant to EMI than twisted pair.
+
+Can support longer distances than UTP in some cases.
+
+✅ Limitations
+Bulkier and less flexible than twisted pair.
+
+Not typically used in modern enterprise LANs.
+
+🧪 Testing & Troubleshooting
+Tools like cable testers and TDRs (Time Domain Reflectometers).
+
+Signal loss (attenuation) and impedance mismatches.
+
+
+Fiber Optic Cable
+Lives at the Physical Layer (Layer 1) of the OSI Model just like twisted pair and coax. But fiber is on another level in terms of speed, distance, and EMI resistance.
+
+🌐 Fiber Optic Cable – OSI Layer 1 (Physical Layer)
+🔍 How it Works
+Uses light (not electricity) to transmit data.
+
+Data is transmitted via LEDs or lasers through a glass or plastic core.
+
+Immune to electromagnetic interference (EMI) because it's optical, not electrical.
+
+🔧 Fiber Types
+Type	Core Size	Light Source	Max Distance	Typical Use
+Single-mode (SMF)	~9 microns	Laser	Up to 100 km+	Long-haul, WANs, telco
+Multimode (MMF)	50–62.5 microns	LED	Up to ~2 km (less with higher speeds)	LANs, data centers
+🔌 Connectors (You'll Need to Know These)
+Connector	Description
+ST	"Stick and twist" – bayonet style
+SC	"Square connector" – push/pull
+LC	"Little connector" – small form
+MTRJ	Duplex connector, often for MMF
+Tip: LC and SC are the most common in modern setups.
+
+📘 Key Topics in Network+
+✅ Speed & Bandwidth
+Fiber can handle speeds 10 Gbps to 400 Gbps+ depending on the transceivers and infrastructure.
+
+Higher bandwidth than copper, perfect for backbone and high-performance needs.
+
+✅ Distance
+Much longer cable runs than twisted pair or coax:
+
+MMF: 300–2000 meters.
+
+SMF: 2–100+ kilometers.
+
+✅ Advantages
+Immune to EMI/RFI.
+
+Highly secure (tapping is harder).
+
+Lightweight and smaller diameter.
+
+✅ Disadvantages
+More expensive.
+
+Fragile—needs proper handling.
+
+Requires specialized equipment for installation and testing.
+
+🧪 Testing & Tools
+OTDR (Optical Time Domain Reflectometer) – tests fiber length and detects faults.
+
+Light meters – check signal strength.
+
+Cleaning kits – fiber ends must be spotless for signal integrity.
+
+Feature	UTP (Unshielded Twisted Pair)	 STP (Shielded Twisted Pair)	 Coaxial	Fiber Optic
+Transmission	Electrical signals	Electrical signals	Electrical signals	Light (optical signals)
+Shielding	❌ None	✅ Yes (foil/braid)	✅ Yes (coaxial shielding)	✅ Cladding, no EMI
+EMI Resistance	⚠️ Low	✅ Good	✅ Good	🟢 Excellent (immune)
+Max Distance	~100 meters	~100 meters	~500+ meters (varies)	MMF: ~2 km / SMF: 100+ km
+Speed	Up to 10 Gbps (Cat6a+)	Up to 10 Gbps	10 Mbps to 100+ Mbps	1 Gbps to 400+ Gbps
+Cost	💲 Low	💲💲 Moderate	💲 Moderate	💲💲💲 High
+Use Case	LANs, office networks	Industrial, high-interference	Cable TV, CCTV, broadband	WAN, data centers, backbone
+Common Connectors	RJ-45	RJ-45	BNC, F-type	ST, SC, LC, MTRJ
+Installation	✅ Easy	⚠️ Needs grounding	✅ Easy/moderate	⚠️ Specialized tools/training
+Security	⚠️ Easier to tap	⚠️ Easier to tap	⚠️ Easier to tap	✅ Harder to tap (more secure)
+
+🧠 Quick Tips:
+Use UTP for most standard Ethernet networks.
+
+Use STP in EMI-heavy environments (e.g., factories).
+
+Use Coax for TV, CCTV, or legacy broadband.
+
+Use Fiber when you need speed, distance, and EMI immunity—great for backbone and WAN links.
+
