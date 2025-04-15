@@ -1,0 +1,25 @@
+History of Ethernet
+
+1. Polling Systems: Networking began with Polling where the mainframe sequentially checked each device for data transmission. As more devices were added to the coaxial cable this method was inefficient due to delays and bottlenecks.
+
+2. Token Rings: In the 1980s IBM developed Token Ring networks a more structured approach. Similar to the Ring infrastructure a token—a small data packet—circulated around the network. A device with the token could only transmit data at 4 mbps.  In so doing, this process reduced collisions and improved efficiency.
+
+3. Ethernet: Came in to the picture by Palo Alto using Carrier Sense Multiple Access with Collision Detection (CSMA/CD). This protocol reduced network crash between devices.  Devices were able to sense data transmission and avoid collisions in the network.  The advent of tranforming LANs.
+
+
+Ethernet Frame 
+1. Preamble - Synchronization 7 bytes -- allowing devices to align their clocks before data transmission begins.
+2. SFD (Start Frame Delimiter) - Signals start of actual Frame 1 byte.
+3. Recipient MAC - receiver's unique device address 6 bytes.
+4. Sender MAC - source's unique device address 6 bytes.
+5. Type/Length of Field - type of protocol used or length of payload 2 bytes.
+6. Data/Payload - data being transmitted 46-1500 bytes.
+7. FCS (Frame Check Sequence) - detect errors during transmission 4 bytes.
+
+Hub vs Switch
+Hub found on Layer 1 and considered not smart.
+Switch found on Layer 2 , intelligent, and learns MAC addresses.
+
+Frame - Layer 2 - Data Link
+Packet - Layer 3 - Network
+Segment - Layer 4 - Transport
