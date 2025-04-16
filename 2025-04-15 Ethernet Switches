@@ -1,0 +1,49 @@
+Three Types of Servers:
+1. Desktop
+2. Rackmount
+3. Blade
+
+Layer 1 - Hub
+Layer 2 - Switch
+Layer 3 - Routers, Servers, PC
+
+Straight - connects devices on different layers e.g. Routers-Switch, Hub-Switch, or PC-Switch
+Crossover - connects devices on same layer e.g. Swithch-Switch, Router-Server, or Hub-Hub
+Rollover - connects devices to the console of the switch (out of band management)
+
+Out-of-Band Management - console - managing switch from console
+In-Band Management - managing switch from desk
+
+Normally Routers and PCs use MDI
+Medium Dependent Interface  Crossover (MDIX) - Hub and Switch
+
+TAPS (Test Access Point)
+Frames and Packets passes through device
+
+SPAN/"Port Mirroring" - Frames and Packets pass through a particular port on the switch.
+
+MAC table = CAM (Content Addressable Memory)
+
+Software used on TAP & SPAN devices:
+-Wireshark
+-tcp dump
+
+Modular       vs.        Fixed
+Changeable Ports         Fixed Ports
+
+Port Aggregation - Increase bandwidth and reduce redundancy
+
+Collision Domain                vs.    Broadcast Domain
+Hub=Half Duplex                        Switch
+                                       FF-FF-FF-FF-FF-FF
+
+
+POE - Power Over Ethernet
+    - 4 pairs of T/P
+    - CAT 5
+    - Different frequencies permit electrical power and data at the same time.
+
+PSE - Power Sourcing Equipment POE switch
+
+POE Injector - Converts non POE switch to a POE
+                                       
