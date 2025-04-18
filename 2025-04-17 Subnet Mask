@@ -1,0 +1,29 @@
+Subnet Mask
+A numerical value used in computer networking to divide an IP address into two parts: 
+1. Network
+2. Host portion.
+
+It helps determine which part of an IP address identifies the network and which part identifies individual devices (hosts) within that network.
+
+Example:
+Subnet mask - 255.255.255.0
+-First three octets (255.255.255) - represent the network
+-Last octet (0) represents the host.
+
+256 IP addresses with 254 usable for devices (excluding the network and broadcast addresses).
+
+Subnet masks are essential for efficient IP address allocation and routing in networks. 
+
+IP Class                Subnet Mask               Cider
+Class A                 255.0.0.0                 /8
+Class B                 255.255.0.0               /16
+Class C                 255.255.255.0             /24
+
+ARP - Address Resolution Protocol - Resolves IP address to MAC address.
+
+ARP Cache - Internal list with IP and MAC addresses.
+
+Dynamic  - Not permanent
+Static - Manually entered
+
+APIPA (Automatic Private IP addressing range) - 169.254.x.x - This IP address didn't get an IP address from DHCP server.
