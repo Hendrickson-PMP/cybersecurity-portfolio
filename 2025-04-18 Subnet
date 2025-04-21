@@ -1,0 +1,28 @@
+ARP: Maps MAC address to IP address
+DNS: Maps Domain name to IP address
+Default Gateway consist of Router and Firewall
+
+SOHO - DNS, DHCP, and NAT
+
+ARP:
+-Layer 2 Protocol
+-Operates on a LAN
+-Uses ARP table
+
+ARP and Ping - resides in two layers (2 and 3)
+
+Unicast - one device sends info to another
+Broadcast - one device sends info to all devices
+Multicast - one device sends info to a group
+
+
+IPv6
+-there's no broadcast address / domain
+-it uses multicast, unicast, and anycast
+-never use on your LAN
+
+IPv4                            vs.            IPv6
+32 bits                                        128 bits
+4 octets                                       hexadecimal
+                                               8 sets of 16 bits   
+Anycast - one device to nearest association
