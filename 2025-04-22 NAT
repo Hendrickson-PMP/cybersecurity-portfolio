@@ -1,0 +1,53 @@
+Network Address Translation - Maps private IP addresses with public IP addresses.
+NAT - used in routers
+
+Private IP Addresses:
+-Class A: 10.0.0.0 – 10.255.255.255 (Used in large networks)
+
+-Class B: 172.16.0.0 – 172.31.255.255 (Used in medium-sized networks)
+
+-Class C: 192.168.0.0 – 192.168.255.255 (Common in home and small business networks)
+
+APIPA (Automatic Private IP Addressing) - a fallback IP address assigned automatically when a device fails to get an address from a DHCP server.
+
+APIPA Address Range
+169.254.0.0 – 169.254.255.255
+
+Used only for local communication within a network—no internet access.
+
+4 Types of NAT
+1. Static NAT (One-to-One Mapping) - Incoming Traffic
+     -Maps a single private IP address to a single public IP address.
+
+     -Useful when a device inside the network needs to be accessible externally (e.g., web servers).
+
+     -Pros: Provides consistency; external users always reach the same IP.
+
+     -Cons: Requires more public IP addresses.
+
+2. Dynamic NAT (Many-to-One Mapping) - Outgoing Traffic
+     -Assigns a public IP dynamically from a pool when needed.
+
+     -Used when internal devices need temporary internet access.
+
+     -Pros: Conserves public IPs efficiently.
+
+     -Cons: Does not guarantee the same public IP each time, making external access unreliable.
+
+3. PAT (Port Address Translation) / NAT Overloading - Outgoing Traffic
+     -A form of Dynamic NAT that maps multiple private IPs to a single public IP using different port numbers.
+
+     -Commonly used in home routers.
+
+     -Pros: Maximizes public IP usage and adds a layer of security.
+
+     -Cons: Some applications struggle with NAT traversal due to port-based routing.
+
+4. Port Forwarding - Incoming Traffic
+     -A networking technique that allows external devices to access services on a private network by directing specific traffic through a firewall or router.
+
+     -Normally, devices on a private network are hidden from the internet for security.
+
+     -Opens a designated port, allowing incoming connections to be directed to a specific device or service.
+
+     -Done by configuring a router or firewall to forward traffic from a public IP (Internet-facing) to an internal IP (Private network device).
