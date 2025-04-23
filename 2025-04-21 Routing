@@ -1,0 +1,63 @@
+Routing refers to the best route or path for the passage of data through the network.
+
+2 Types of Routing
+1. Static Routing - Routes are manually configured and manually updated. 
+                  - Common in smaller, stable network.
+                  - Used where security is a concern.
+                  - Easy to setup and maintain.
+                  - Paths are predetermined.
+                  - More efficient
+2. Dynamic Routing - Routes are automatically adjusted based on network conditions using protocols like OSPF, BGP, or RIP.
+                   - Uses algorthim to determined best path.
+                   - Allows routers to automatically adapt to changes in the network.
+                   - More flexible and resilient.
+                   - More complex to setup.
+
+
+Routes are based on the following metrics:
+-Hops Count
+-Speed
+-Latency/Delay
+-Bandwidth/Cost
+-MTU (Maximum Transmission Unit) - the largest size of a data packet that can be transmitted over a network in a single frame without fragmentation.
+-Traffic
+
+MAC address - tells who you are and seldomly changes.
+IP address - tells where you are and changes.
+
+Routers have a Routing Table
+
+Routing Protocols:
+1. Distance Vector
+     -Routers share routing info with immediate neighbors at set intervals, using metrics like hop count (number of routers a packet must pass through).
+
+     -Pros: Simple to configure and manage.
+
+     -Cons: Slower convergence time (takes longer for the network to update) and potential routing loops.
+
+     -Examples: RIP (Routing Information Protocol) and EIGRP (Enhanced Interior Gateway Routing Protocol).
+
+2. Link State
+     -Routers share detailed topology information about the entire network, not just their neighbors. Each router builds a map of the network and calculates the best path.
+
+     -Pros: Faster convergence and more efficient routing decisions.
+
+     -Cons: Requires more processing power and memory.
+
+     -Examples: OSPF (Open Shortest Path First) and IS-IS (Intermediate System to Intermediate System).
+
+3. Hybrid 
+     -How it works: Combines features of both Distance Vector and Link-State routing to optimize performance.
+
+     -Pros: Offers better scalability and efficiency while reducing routing overhead.
+
+     -Cons: Complexity in configuration and implementation.
+
+     -Example: EIGRP (it includes both Distance Vector and Link-State elements).
+     
+4. External
+     -Used to route between different organizations.
+
+     -BGP (Border Gateway Protocol) 
+          – Core protocol of the internet, determining paths between autonomous systems. 
+          - Used by ISPs for large-scale routing decisions.
