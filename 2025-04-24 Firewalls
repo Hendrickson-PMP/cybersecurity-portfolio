@@ -1,0 +1,25 @@
+Firewalls are filters of networks.
+
+Stateless Firewall: 
+-Examines incoming and outgoing packets individually, without considering their relationship to previous network activity. 
+-Applies predefined rules to filter traffic, but does not keep track of connections. 
+-Faster but less intelligent in blocking sophisticated threats.
+
+Stateful Firewall: 
+-Remember and analyze traffic patterns. 
+-Monitor ongoing connection.
+-Track the state of communication sessions and make decisions based on previous interactions. 
+-More secure, as it can detect suspicious activity based on prior exchanges.
+
+Access Control List (ACL)
+-Controls traffic in both directions.
+-Provides basic security for network.
+
+ACL + Router = Caveman Firewall
+
+Proxy Server
+-Privacy & Anonymity: hide your IP address, making it harder for websites to track your location and browsing habits.
+-Security: filter traffic, block malicious sites, and prevent access to certain content.
+-Access Control: manage employee internet usage, restricting access to specific sites.
+-Performance Optimization: caching frequently accessed web pages, reduce load times and save bandwidth.
+-Geolocation Bypass: allow users to access content that is restricted in their region.
