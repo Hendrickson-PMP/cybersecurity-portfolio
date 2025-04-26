@@ -1,0 +1,20 @@
+Collision Domain: 
+A network segment where data packets can collide with each other when two or more devices attempt to send data simultaneously. Common on hubs.
+
+Broadcast Domain:
+A network segment where a broadcast packet can be received by all devices within that segment. Has a router or a switch
+
+
+                       Layer 2 Switch	                            vs                         Layer 3 Switch
+OSI Layer	             Layer 2 (Data Link)	                                                 Layer 3 (Network)
+Switching Method	     MAC Address	                                                         MAC & IP Address
+Routing Capability	   No	                                                                   Yes (Inter-VLAN Routing)
+Broadcast Domains	     One per VLAN	                                                         Multiple (Routes Between VLANs)
+Use Case	             Simple LAN Switching	                                                 Complex Network Segmentation
+
+
+                       Static VLAN                                  vs                       Dynamic VLAN
+Assignment Method	     Manually (Port-Based)	                                               Automatically (MAC Address, Authentication, etc.)
+Configuration Effort	 High (Manual Setup)	                                                 Lower (Automated Assignments)
+Adaptability	         Limited (Fixed to Port)	                                             High (Devices Maintain VLAN Across Ports)
+Security	             Higher (Predictable)	                                                 Variable (Depends on Authentication Controls)
