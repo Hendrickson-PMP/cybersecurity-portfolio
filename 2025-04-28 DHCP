@@ -1,0 +1,39 @@
+Transport Layer (Layer 4)
+-Connection Oriented
+-Reliable
+-Handshake
+-Flow Control
+-Sequencing
+
+Ports
+0-1023 Well known Ports
+1024-49151 Registered Ports
+49152-65535 Dynamic and Private Ports
+
+Connection - a link between devices.  Has two end points and two sockets.
+Session - must have a start and an end.  A process.
+
+Socket = IP Address + Port Number
+
+Three Way Handshake
+-Syn - The Connection
+-Syn Ack - Sychronization + Acknowledgment
+-Ack - Received
+
+Well Known Port #
+20 TCP      FTP - data transfer
+21 TCP      FTP - data control command   
+22 TCP      Secure Shell (SSH) - Secure Telnet
+23 TCP      Telnet - unencrypted text communications
+25 TCP      SMTP - email routing between mail servers
+53 TCP/UDP  DNS
+67 TCP      DHCP - client to server   
+68 TCP      DHCP - server to client 
+69 TCP      TFTP - Trivial FTP
+80 TCP      HTTP - Hypertext Transfer Protocol - web service, not secure
+110 TCP     Post Office Protocol v3 (POP3) - management of email messages
+123 UDP     NTP (Network Time Protocol), SNTP (Simple Network Time Protocol)
+143 TCP     Internet Message Access Protocol v4 (IMAP4) - management of email messages
+443 TCP     HTTPS - HTTP over Secure sockets Layer - secure web service
+
+
