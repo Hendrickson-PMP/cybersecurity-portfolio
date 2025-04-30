@@ -5,7 +5,7 @@ A portfolio for showcasing my progress and achievements in cybersecurity.
 Kevin Hendrickson
 
 **Hometown:**
-Union City, GA
+Atlanta, GA
 
 **Prior IT Experience:**
 Results-driven and PMP certified professional with a track record of success leading complex projects from ideation to finalization.
