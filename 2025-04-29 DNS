@@ -1,0 +1,36 @@
+DNS 53: Responsible for mapping domain name to ip address.
+
+DNS Servers:
+-Recursive - handles queries by searching for the IP Address
+-Root - directs query to the appropriate TLD
+-Authoritative - store DNS records for specific domains and provide definitive answers to queries.
+-Caching - temporarily store query results to speed up future requests
+-Primary - main authoritative server that holds the original DNS records for a domain.  Managaes updates and changes to DNS zone file.
+-Secondary - acts as a backup. Helps improve reliability and redundancy.
+
+
+Feature     	  Primary DNS Server	                          Secondary DNS Server
+Role	          Stores and manages DNS records	              Holds a copy of the primary DNS records
+Updates	        Can modify DNS records	                      Cannot modify records, only syncs from primary
+Reliability	    Single point of failure if not backed up	    Provides redundancy in case of primary failure
+Zone Transfers	Sends updates to secondary servers	          Receives updates from primary server
+
+
+DNS Record Type	                           Purpose
+A 	                                       Maps a domain name to an IPv4 address.
+AAAA                                       Maps a domain name to an IPv6 address.
+CNAME                                      Creates an alias for another domain name.
+MX                                         Specifies mail servers for email delivery.
+TXT                                        Stores text-based information, often used for verification and security.
+NS 	                                       Identifies the authoritative name servers for a domain.
+SOA                                        Contains administrative details about the domain, including primary name server and update settings.
+PTR                                        Used for reverse DNS lookups, mapping IP addresses to domain names.
+SRV                                        Defines services and ports for specific applications, like VoIP.
+
+
+                     DNS Zone	                                                  DNS Records
+Definition	         A section of the DNS namespace managed by an entity.	      Individual entries within a DNS zone that store domain-related information.
+Function	           Organizes and manages records for a domain or subdomain.	  Provides specific details like IP mappings, mail servers, and aliases.
+Scope	               Covers an entire domain or subdomain.	                    Represents individual components within a DNS zone.
+Examples	           example.com DNS zone contains multiple records.	          A record mapping www.example.com to an IP address.
+
