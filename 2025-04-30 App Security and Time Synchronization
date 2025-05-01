@@ -1,0 +1,91 @@
+
+SECURITY PROTOCOLS
+Protocol	                                  Application Security Features       	       Vulnerabilities	                                 Use Cases
+HTTP (Hypertext Transfer Protocol)	        No encryption; 	                             Susceptible to man-in-the-middle attacks, 	       Basic web communication when security 
+                                            data is transmitted in plaintext             packet sniffing, and data interception            is not a concern
+HTTPS (Hypertext Transfer Protocol Secure)	Encrypts data using SSL/TLS; 	               Still vulnerable to SSL/TLS misconfigurations,    Secure web browsing, e-commerce transactions, 
+                                            ensures data integrity and authentication    outdated certificates, and weak cipher suites	   and online banking    
+SSL (Secure Sockets Layer)	                Provides encryption and authentication; 	   SSL versions 2.0 and 3.0 are deprecated 	         Older secured websites and legacy systems 
+                                            establishes secure communication             due to security flaws like POODLE attack          (deprecated in favor of TLS)
+TLS (Transport Layer Security)	            Improved encryption over SSL;                Weak implementations or outdated versions 	       Modern secure web applications, email encryption, 
+                                            prevents data tampering                      (TLS 1.0 and 1.1 are deprecated)                  VPNs, and online payments
+                                            and unauthorized access 
+
+
+
+TIME PROTOCOLS 
+Protocol	                       Purpose	                             Accuracy	                        Use Cases	                             Network Overhead
+NTP (Network Time Protocol)	     Synchronizes clocks over a network	   Typically within milliseconds	  General-purpose applications:          Moderate 
+                                                                                                        IT infrastructure, financial systems,  (can work in large-scale networks)
+                                                                                                        log synchronization
+PTP (Precision Time Protocol)	   Provides highly precise time 	       Typically within nanoseconds	    High-precision industries: telecom, 	 High 
+                                 synchronization                                                        aerospace, industrial automation       (requires specialized hardware like PTP-enabled switches)
+
+
+Key Differences:
+NTP is designed for broad use in computers, servers, and IT networks where millisecond accuracy is sufficient.
+
+PTP is used in environments needing extreme precision, such as measuring delays in 5G networks or coordinating robotics systems.
+
+PTP requires specialized hardware (such as boundary clocks and transparent clocks) for accurate synchronization, while NTP works with standard network devices.   
+
+FILE SHARING PROTOCOLS
+
+Protocol	                             Security	                  Speed	                   Use Cases	                             Underlying Transport
+FTP (File Transfer Protocol)	         No encryption; 	          Moderate	               Basic file transfers over a network	   TCP (Port 21)
+                                       data sent in plaintext 
+SFTP (SSH File Transfer Protocol)	     Secure 	                  Slightly slower due 	   Secure remote file transfers and 	     TCP (Port 22)
+                                       (encrypted via SSH)        to encryption overhead   system administration
+TFTP (Trivial File Transfer Protocol)	 No encryption; 	          Fast (lightweight)	     Sending firmware updates, boot files,   UDP (Port 69)
+                                       minimal authentication                              and configurations
+SMB (Server Message Block)	           Encryption via SMBv3; 	    Moderate	               Windows file sharing, printer sharing	 TCP (Port 445)
+                                       supports authentication 
+CIFS (Common Internet File System)	   Weak security            	Moderate	               Windows-based file and printer sharing	 TCP (Port 445)
+                                       (deprecated in favor 
+                                       of SMBv2/v3)
+NFS (Network File System)	             Authentication supported; 	Moderate	               Unix/Linux file sharing across networks	TCP/UDP (Port 2049)
+                                       encryption available in 
+                                       later versions
+ATP (AppleTalk Protocol)	             Legacy security; minimal	  Slow (outdated)	         Older macOS systems for file and printer  AppleTalk network stack (legacy)
+                                       authentication                                      sharing  
+
+Key Takeaways:
+SFTP is preferable for secure file transfers, leveraging SSH encryption.
+
+TFTP is lightweight but lacks security, ideal for network booting and firmware updates.
+
+SMB and NFS are used for file sharing across Windows and Unix/Linux environments, respectively.
+
+
+EMAILS
+
+Protocol	                              Purpose	                            Type	                       Security Features	                        Use Cases
+SMTP (Simple Mail Transfer Protocol)	  Sends emails between mail servers	  Email transmission	         Supports encryption via STARTTLS	          Email delivery from client to server
+POP3 (Post Office Protocol v3)	        Downloads emails from server	      Email retrieval	             Basic authentication, some support	        Used for offline email storage on a device
+                                        to client                                                        for SSL/TLS
+IMAP (Internet Message Access Protocol)	Synchronizes emails between 	      Email retrieval	             Stronger security than POP3; 	            Keeps emails stored on the server for remote access
+                                        server & client                                                  supports SSL/TLS  
+VoIP (Voice over Internet Protocol)	    Transmits voice calls over 	        Communication protocol	     Encryption depends on implementation 	    Internet-based phone calls
+                                        the internet                                                     (SRTP, TLS)
+SIP (Session Initiation Protocol)	      Establishes and manages VoIP 	      Signaling protocol	         Supports encryption and authentication	    Used in VoIP call setup, video conferencing
+                                        sessions
+ADC (Advanced Data Communication)	      Improves data transmission & 	      Network communication	       Typically works at transport layer, 	      Used in high-speed data transfer and enterprise networks
+                                        efficiency                                                       varies by application
+RTP (Real-time Transport Protocol)	    Handles real-time media streaming	  Media transmission protocol	 Can be encrypted using SRTP	              Used in VoIP, video streaming, online gaming
+
+
+Key Differences:
+SMTP, POP3, and IMAP focus on email communication, while VoIP, SIP, RTP relate to voice and media streaming.
+
+POP3 downloads email to the client, while IMAP keeps it synced with the server for cloud-based access.
+
+SIP manages VoIP signaling, while RTP handles media transmission during voice/video calls.
+
+ADC is more about optimizing data communication rather than a specific messaging format.
+
+
+
+
+
+
+
