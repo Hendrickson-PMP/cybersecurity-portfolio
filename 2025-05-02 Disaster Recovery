@@ -1,0 +1,57 @@
+
+Aspect	     Business Impact Analysis (BIA)	                 Business Continuity Plan (BCP)	                          Disaster Recovery Plan (DRP)
+Purpose	     Assesses potential impact of disruptions	       Ensures continuity of business operations	              Restores IT infrastructure after a disaster
+Focus	       Identifies critical business functions 	       Provides strategies to maintain operations	              Details technical recovery steps for systems
+             and dependencies
+Key          Components	Risk assessment, 	                   Communication plans, backup procedures, 	                IT asset recovery, data restoration, system redundancy
+             financial impact analysis,                      alternative work arrangements
+             recovery time objectives (RTO)
+Timing	     Conducted before creating BCP and DRP	         Activated during a disruption to maintain 	              Executed post-disaster to restore technical capabilities
+                                                             business functions
+Ownership	   Business leaders, risk management teams	       Executives, operational managers,                        IT and cybersecurity teams, disaster recovery specialists
+                                                             crisis response teams
+
+CIA Triad
+Confidentiality: Protecting data from unauthorized access
+Integrity: Ensuring data remains accurate, consitent, and unaltered by the unauthorized
+Availability:  Ensuring authorized users can have access
+
+High Availability - Always on
+                    Always available
+
+Recovery Time Objective (RTO): The maximum allowable downtime before business operations must resume. It defines how quickly systems need to be restored after a disruption. Example: If RTO is 4 hours, operations must be back up within that time.
+
+Recovery Point Objective (RPO): The maximum acceptable data loss measured in time. It determines how much data can be lost without significant impact. Example: If RPO is 30 minutes, backups must be frequent enough to ensure data loss does not exceed that timeframe.
+
+Key Difference:
+
+RTO focuses on restoring operations promptly.
+
+RPO focuses on minimizing data loss within an acceptable window.
+
+
+
+Type	        Definition	                                                   Recovery Speed	               Cost	      Example Use Case
+Hot Site 	    Fully operational backup site with real-time data replication	 Fast (minutes to hours)	     High	      Critical operations needing near-instant recovery, like financial institutions
+Warm Site     Partially equipped backup site with infrastructure          	 Moderate (hours to days)	     Medium	    Businesses that can tolerate some downtime but need a quicker recovery
+              in place but requires data restoration
+Cold Site     Basic facility with power and networking,                      Slow (days to weeks)	         Low	      Organizations with longer RTO/RPO tolerances that can rebuild systems from scratch
+              but no pre-installed infrastructure or data
+
+Key Differences:
+Hot sites minimize downtime but are expensive to maintain.
+Warm sites balance cost and recovery speed.
+Cold sites are cost-effective but require extensive setup during a disaster.
+
+
+LACP (Link Aggregation Control Protocol): A protocol used to combine multiple physical network links into a single logical link to increase bandwidth and provide redundancy. Commonly used in switches to enhance network resilience.
+
+STP (Spanning Tree Protocol): A network protocol that prevents loops in Ethernet networks by creating a spanning tree. It ensures only one active path exists between devices, preventing broadcast storms.
+
+Data Chain: A sequence in which data is processed, stored, and transmitted across a system. Often used in database management and blockchain structures.
+
+Round Robin: A scheduling method that distributes tasks or requests sequentially across multiple resources. In networking, it’s used for load balancing by directing requests evenly across servers.
+
+Load Balancing: The process of distributing network traffic or computational tasks across multiple servers to optimize performance and prevent overload. Methods include Round Robin, Least Connections, and dynamic routing.
+
+Cluster: A group of connected servers or devices that work together as a unified system for high availability, scalability, or parallel computing. Used in cloud computing, database management, and big data processing.                  
