@@ -1,0 +1,78 @@
+Comparison:
+Attack Type	      Method	                       Speed	      Works Against	             Defense
+Brute Force	      All possible combinations	     Slow	        Any password	             Strong, long passwords, MFA
+Dictionary	      Common passwords list	         Moderate	    Weak, common ones	         Unpredictable, complex passwords
+Rainbow Table	    Precomputed hash reversals	   Fast	        Unsalted hashes	           Use salts + strong hash algos
+
+Non-repudiation:
+You can’t say you didn’t do it, because we have proof that you did.
+
+Example:
+You order a toy online.
+The website gives you a receipt showing your name, what you bought, and the time.
+You can't say, "I didn’t order that!" because the receipt proves it.
+
+Term	                   What it Means	                                Example
+Threat	                 Something that can cause harm	                Hacker, storm, malware
+Vulnerability	           Weakness the threat can exploit	              Unpatched software, weak password
+Likelihood	             Chance the threat happens	                    80% chance of phishing email success
+Impact	                 How bad it would be	                          Loss of data, money, or trust
+Risk	                   Total danger level	                            High risk = high threat + high impact
+
+
+Tools:
+Feature	                              Honeypot	                                              Honeynet
+Scope	                                Single system or service	                              Full network of decoy systems
+Complexity	                          Lower	                                                  Higher
+Purpose	                              Lure and detect intrusions	                            Study complex attacks and attacker behavior
+Cost	                                Less resource-intensive	                               More resource-intensive
+
+
+Security Audits
+Audit Type	          Main Question	                  Focus Area	                        Driven By	                   Example
+Compliance	          Are we meeting requirements?	  Rules, laws, standards	            Legal/regulatory needs	     PCI DSS audit for credit card data
+Risk-Based	          What could hurt us most?	      Business and cyber risks	          Internal risk assessments	   Prioritizing audits by system risk
+Technical	            Are systems secure and strong?	Infrastructure, configs, code	      Security/IT best practices	 Server config & patch audit
+
+
+GDPR - EU Privacy
+PCI DSS - Credit Card Regulation
+
+
+Concept	                               Risk Management	                                             Risk Assessment
+Scope	                                 Big-picture strategy	                                         Detailed analysis step within the strategy
+Focus	                                 Handling and reducing risk over time	                         Identifying and analyzing risks
+Includes	                             Planning, assessing, treating, monitoring	                   Identification, likelihood, impact
+When                                   Used	Continuously	                                           Often at the beginning of a project or periodically
+Example	                               Creating and maintaining a cybersecurity program	             Evaluating the risk of weak passwords
+
+
+Feature	                       Hash Algorithm	                        Symmetric Key	                                         Asymmetric Key
+Key Used?	                     No	                                    Same key (shared)	                                     Public/Private key pair
+Direction	                     One-way	                              Two-way (same key)	                                   Two-way (different keys)
+Speed	                         Very fast	                            Fast	                                                 Slower
+Purpose	                       Integrity, checksums	                  Bulk encryption	                                       Key exchange, authentication
+Examples	                     SHA-256, MD5	                          AES, DES, Blowfish	                                   RSA, ECC, DSA
+
+
+State	                Description	                  Example	                         Key Risks	                              Protections
+At Rest	              Stored data	                  Hard drive, cloud storage	       Theft, breach	                          Disk encryption, access controls
+In Transit	          Data being transmitted	      Email, HTTPS, file transfer	     Interception, MITM                       TLS/SSL, VPN, encryption
+In Use	              Data being processed/viewed	  Open file, active session	       Memory theft, malware	                  Endpoint security, TEEs
+
+
+Threat Actor	                  Motivation	                  Risk Level	                        Example Tactics
+Nation-State	                  Espionage, sabotage	          High	                              APTs, malware, zero-days
+Organized                       Crime	Financial	              High	                              Ransomware, phishing
+Hacktivist	                    Social/political	            Medium	                            DDoS, defacement
+External Actor	                Varies	                      Medium-High	                        Exploits, brute force
+Internal Actor	                Negligence or malice	        High	                              Data theft, sabotage
+
+
+Feature	                                         Footprinting	                                            Fingerprinting
+Phase	                                           Early (pre-attack reconnaissance)	                      Mid-level (detailed probing)
+Type	                                           Passive or active	                                      Mostly active
+Purpose	                                         Gather public info	                                      Identify system/OS/service details
+Examples	                                       WHOIS, DNS queries, Google dorking	                      Nmap OS detection, banner grabbing
+Risk Level	                                     Low (if passive)	                                        Medium to high (likely to be noticed)
+
